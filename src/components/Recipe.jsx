@@ -1,4 +1,3 @@
-import recipes from '../recipes.json';
 import { HiChartPie, HiChartBar } from 'react-icons/hi';
 import { TbAlarm } from 'react-icons/tb';
 
