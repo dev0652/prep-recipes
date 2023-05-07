@@ -1,5 +1,5 @@
-import { RecipeInfo } from './Recipe';
-import { Difficulty } from './Difficulty';
+import { RecipeInfo } from '../RecipeInfo/RecipeInfo';
+import { Difficulty } from '../Difficulty/Difficulty';
 import { Title, Wrapper } from './Recipe.styled';
 
 export const Recipe = ({
@@ -9,13 +9,7 @@ export const Recipe = ({
     <Wrapper>
       <Title>{name}</Title>
       <RecipeInfo time={time} servings={servings} calories={calories} />
-
-      <div>
-        <h3>Difficulty</h3>
-        <span>Easy</span>
-        <span>Medium</span>
-        <span>Hard</span>
-      </div>
+      <Difficulty difficulty={difficulty} />
     </Wrapper>
   );
 };
