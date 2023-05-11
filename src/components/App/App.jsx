@@ -1,10 +1,11 @@
 import { RecipeList } from '../RecipeList/RecipeList';
 import recipes from '../../recipes.json';
+import { Wrapper } from './App.styled';
 
 export const App = () => {
   return (
-    <div>
+    <Wrapper>
       <RecipeList recipes={recipes} />
-    </div>
+    </Wrapper>
   );
 };

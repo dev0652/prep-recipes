@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
 import { Recipe } from '../Recipe/Recipe';
+import { Card, CardList } from './RecipeList.styled';
 
 export const RecipeList = ({ recipes }) => {
   return (
-    <ul>
+    <CardList>
       {recipes.map((recipe, index) => (
-        <li key={index}>
+        <Card key={index}>
           <Recipe recipe={recipe} />
-        </li>
+        </Card>
       ))}
-    </ul>
+    </CardList>
   );
 };
 
