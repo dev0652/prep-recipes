@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { RecipeInfo } from '../RecipeInfo/RecipeInfo';
 import { Difficulty } from '../Difficulty/Difficulty';
 import { Image, Title, Wrapper } from './Recipe.styled';
-import { PaymentWidget } from '../PaymentWidget/PaymentWidget';
 
 export class Recipe extends Component {
   state = {
@@ -33,7 +32,6 @@ export class Recipe extends Component {
           <>
             <RecipeInfo time={time} servings={servings} calories={calories} />
             <Difficulty difficulty={difficulty} />
-            <PaymentWidget />
           </>
         )}
       </Wrapper>
